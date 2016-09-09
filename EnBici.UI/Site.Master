@@ -1,0 +1,79 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="EnBici.SiteMaster" %>
+<!DOCTYPE html>
+<html xml:lang="ES-ES">
+<head runat="server">
+	<meta name="viewport" content="width=device-width, initial-scale=1" charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<title><%: Page.Title %></title>
+	<link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+	<link href="css/reset.css" rel="stylesheet" />
+	<link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/default.css" rel="stylesheet" />
+	<link href="css/component.css" rel="stylesheet" />	    
+</head>
+<body>
+    <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/modernizr.custom.js"></script>
+    <%--<link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700|Open+Sans+Condensed:700,300,300italic|Open+Sans:400,300italic,400italic,600,600italic,700,700italic,800,800italic|PT+Sans:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+  	<link href='http://fonts.googleapis.com/css?family=Rock+Salt' rel='stylesheet' type='text/css'/>--%>
+	<form runat="server">
+	<div class="container">	
+		<header>
+			<h1>TuBiciMap <span>La mejor opción para moverte en bici</span></h1>	
+		</header>		
+		<div class="main clearfix">
+			<nav id="menu" class="nav">					
+				<ul>
+					<li>
+						<a href="/TuBiciMap.aspx">
+							<span class="icon">
+								<i aria-hidden="true" class="icon-home"></i>
+							</span>
+							<span class="enlace">Tu ruta</span>
+						</a>
+					</li>
+					<li>
+						<a href="/Estadisticas.aspx">
+							<span class="icon"> 
+								<i aria-hidden="true" class="icon-services"></i>
+							</span>
+							<span class="enlace">Estadísticas</span>
+						</a>
+					</li>	
+					<li>
+						<a href="/Enlaces.aspx">
+							<span class="icon">
+								<i aria-hidden="true" class="icon-blog"></i>
+							</span>
+							<span class="enlace">Enlaces</span>
+						</a>
+					</li>									
+					<li>
+						<a href="/About.aspx">
+							<span class="icon">
+								<i aria-hidden="true" class="icon-team"></i>
+							</span>
+							<span class="enlace">Nosotros</span>
+						</a>
+					</li>
+					<li>
+						<a href="/Contacto.aspx">
+							<span class="icon">
+								<i aria-hidden="true" class="icon-contact"></i>
+							</span>
+							<span class="enlace">Contacto</span>
+						</a>
+					</li>                    
+				</ul>			
+            </nav>            		 
+        </div>	
+	</div>
+	<div>
+    <asp:ContentPlaceHolder ID="MainContent" runat="server"></asp:ContentPlaceHolder>     
+	</div>
+	</form>
+
+	
+</body>
+</html>
